@@ -16,3 +16,11 @@ void Chain::put(int n){
     }
 }
 
+int Chain::get(int n){
+    Node * current = this->firstN;
+    if (current == NULL) return INT_MAX;
+    for (; n > 0; n++) {
+        current = current->next;
+    }
+    return (current == NULL) ? INT_MAX : current->value;
+}
