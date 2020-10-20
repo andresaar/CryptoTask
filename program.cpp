@@ -53,6 +53,7 @@ int Chain::remove(int n){
 
 void Chain::clear(void){
     this->firstN = NULL;
+    this->lastN = NULL;
 }
 
 int Chain::first(void) {
@@ -60,5 +61,5 @@ int Chain::first(void) {
 }
 
 int Chain::last(void){
-    return this->firstN->value;
+    return this->lastN->value;
 }
