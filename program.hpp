@@ -28,6 +28,8 @@ class Chain {
         void clear(void);
         int first(void);
         int last(void);
+        vector<int> sort(void);
+        void bubbleSort(vector<int> &a);
 };
 
 #endif

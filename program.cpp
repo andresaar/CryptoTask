@@ -63,3 +63,27 @@ int Chain::first(void) {
 int Chain::last(void){
     return this->lastN->value;
 }
+
+vector<int> Chain::sort(void){
+    vector<int> values = this->list();
+
+    this->bubbleSort(values);
+
+    return values;
+}
+
+void Chain::bubbleSort(vector<int>& a)
+{
+      bool swapp = true;
+      while(swapp){
+        swapp = false;
+        for (size_t i = 0; i < a.size()-1; i++) {
+            if (a[i]>a[i+1] ){
+                a[i] += a[i+1];
+                a[i+1] = a[i] - a[i+1];
+                a[i] -=a[i+1];
+                swapp = true;
+            }
+        }
+    }
+}

@@ -19,8 +19,8 @@ int main() {
 
     ch.put(8);
 
-    cout << "listing: " << endl;
-    for (auto val :  ch.list()){
+    cout << "listing sorted: " << endl;
+    for (auto val :  ch.sort()){
         cout << val << " ";
     }
     cout << endl;
