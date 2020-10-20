@@ -1,4 +1,10 @@
+#ifndef PROGRAM
+#define PROGRAM
+
 #include <vector>
+#include <limits.h>
+
+using namespace std;
 
 class Node {
     public:
@@ -18,8 +24,10 @@ class Chain {
         void put(int n);
         int get(int n);
         vector<int> list(void);
-        void remove(int n);
+        int remove(int n);
         void clear(void);
         int first(void);
         int last(void);
 };
+
+#endif
